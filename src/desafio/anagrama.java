@@ -22,12 +22,12 @@ public class anagrama {
 	                String x = palavra.substring(i, i + 1);
 	                listaDeAnagramas.add(x);
 	                } else {
-	                String y = palavra.substring(i, j);
-	                String z = palavra.substring(i + 1, j + 1);
-	                String h = palavra.substring(i, i + 1);
-	                listaDeAnagramas.add(h);
-	                listaDeAnagramas.add(y);
-	                listaDeAnagramas.add(z);
+	                String k = palavra.substring(i, j);
+	                String l = palavra.substring(i + 1, j + 1);
+	                String m = palavra.substring(i, i + 1);
+	                listaDeAnagramas.add(k);
+	                listaDeAnagramas.add(l);
+	                listaDeAnagramas.add(m);
 	                }
 	            }
 	        }
