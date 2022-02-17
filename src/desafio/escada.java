@@ -8,15 +8,21 @@ public class escada {
 	 public static void main(String[] args) {
 		 Scanner leia = new Scanner(System.in);
 
+		 	//Lista onde o array será adicionado
 			List<String> linhas = new ArrayList<>();
 
-			System.out.print("Digite a quantidade de linhas: ");
+			
+			//Solicitando um número para o usuário
+			System.out.print("Digite um número: ");
 			int qtdLinhas = leia.nextInt();
 
+			
+			//Iniciando laço de repetição e adicionando ao arraylist
 			for (int i = 0; i < qtdLinhas; i++) {
 				linhas.add(" ".repeat(qtdLinhas - i) + "*".repeat(i + 1));
 			}
 
+			//Imprimindo o laço de repetição que contém o arraylist
 			for (String imprimir : linhas) {
 				System.out.println(imprimir);
 			}
