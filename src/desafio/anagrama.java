@@ -1,3 +1,9 @@
+/*
+ * Duas palavras podem ser consideradas anagramas de si mesmas se as letras de uma palavra podem ser realocadas para formar a outra palavra. 
+ * Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas.
+ */
+
+
 package desafio;
 
 import java.util.ArrayList;
@@ -10,11 +16,14 @@ public class anagrama {
 	    Scanner leia = new Scanner (System.in);
 		String palavra;
 	    
-	    System.out.println("Digite uma palavra");
+		System.out.println("Digite uma palavra");
 	    palavra = leia.nextLine();
 	    
+	    
+	    //Lista onde as letras serão adicionadas
 	    ArrayList<String> listaDeAnagramas = new ArrayList<String>();
 	    
+	    //Inicio do laço de repetição onde é possível verificar se existe algum anagrama
 	    for(int i = 0; i <palavra.length(); i++) {
 	        for(int j = 1; j < palavra.length(); j++) {
 	            if(palavra.charAt(i) == palavra.charAt(j) && i !=j && i < j) {
@@ -33,6 +42,7 @@ public class anagrama {
 	        }
 	    }
 	    
+	    //Imprimindo quantidade de anagramas encontrados
 	    System.out.println(listaDeAnagramas.size());
 	}
 }
